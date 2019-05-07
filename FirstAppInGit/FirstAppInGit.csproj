@@ -56,8 +56,12 @@
     <Content Include="HtmlDemo\demo01.html" />
     <Content Include="HtmlDemo\demo02.html" />
     <Content Include="HtmlDemo\demo03.html" />
+    <Content Include="HtmlDemo\HTML语法规范.html" />
     <Content Include="HtmlDemo\Img\demo07.html" />
     <Content Include="HtmlDemo\Img\demo08.html" />
+    <Content Include="HtmlDemo\Meta_Demo.html" />
+    <Content Include="HtmlDemo\练习\练习1.html" />
+    <Content Include="HtmlDemo\超链接.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
