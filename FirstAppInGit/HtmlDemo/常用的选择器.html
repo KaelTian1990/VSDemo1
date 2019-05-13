@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>常用的选择器</title>
+    <style type="text/css">
+        /*
+            * 元素选择器
+              指定页面中的所有指定元素
+              语法:  标签名 {}
+        */
+
+        /*p{
+            font-size:20px;
+            color:greenyellow;
+            font-weight:bold;
+        }*/
+
+        h1 {
+            font-size: 100px;
+        }
+
+        /*
+            *id选择器
+            通过id属性值选中唯一的一个元素
+        */
+
+        #p1_text {
+            font-size: 20px;
+            color: chartreuse;
+        }
+
+        /*
+             * 类选择器
+             * 通过元素的class属性选中一组元素
+               语法:
+               .class属性值 {}
+               可以为同一个元素设置多个class属性值,多个值用空格隔开
+        */
+        .c1 {
+            font-weight: bold;
+            color: darkgreen;
+        }
+
+        .c2 {
+            font-size: 50px;
+        }
+
+
+        /*
+            选择器分组(并集选择器)
+
+            通过选择器分组可以同时选中多个选择器对应的元素
+                语法:选择器1,选择器2,选择器N{}
+        */
+        h1, .c1, .c2, #p1_text {
+            background-color: darkturquoise;
+        }
+
+
+        /*
+            通配选择器
+
+            选择页面中的所有元素
+
+            语法:  * {}
+        */
+
+        /*
+            复合选择器
+
+            为拥有class p3 的span元素设置一个背景颜色为黄色
+
+            交集选择器
+        */
+
+        span.p3 {
+            background-color: yellow;
+        }
+
+            span.p3.p4 {
+                background-color: blue;
+            }
+    </style>
+</head>
+<body>
+    <h1>嘚瑟</h1>
+    <p>郭德纲和于谦</p>
+    <p id="p1_text">郭德纲和于谦</p>
+    <p class="c1">郭德纲和于谦</p>
+    <p class="c1 c2">郭德纲和于谦</p>
+    <p class="c1">郭德纲和于谦</p>
+    <p>郭德纲和于谦</p>
+    <p class="p3">class p3 p</p>
+    <span class="p3">class p3 span</span><br />
+    <span class="p3 p4">class p3 p4 span</span>
+</body>
+</html>

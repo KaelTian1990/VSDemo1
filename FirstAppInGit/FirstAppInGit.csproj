@@ -53,6 +53,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="CssDemo\CDemo1.html" />
+    <Content Include="CssDemo\Css语法demo1.html" />
+    <Content Include="CssDemo\style1.css" />
     <Content Include="HtmlDemo\demo01.html" />
     <Content Include="HtmlDemo\demo02.html" />
     <Content Include="HtmlDemo\demo03.html" />
@@ -60,6 +63,15 @@
     <Content Include="HtmlDemo\Img\demo07.html" />
     <Content Include="HtmlDemo\Img\demo08.html" />
     <Content Include="HtmlDemo\Meta_Demo.html" />
+    <Content Include="HtmlDemo\伪元素Demo.html" />
+    <Content Include="HtmlDemo\伪类Demo.html" />
+    <Content Include="HtmlDemo\兄弟元素选择器.html" />
+    <Content Include="HtmlDemo\否定伪类.html" />
+    <Content Include="HtmlDemo\块与内联demo.html" />
+    <Content Include="HtmlDemo\子元素选择器.html" />
+    <Content Include="HtmlDemo\子类和后代选择器.html" />
+    <Content Include="HtmlDemo\属性选择器.html" />
+    <Content Include="HtmlDemo\常用的选择器.html" />
     <Content Include="HtmlDemo\练习\练习1.html" />
     <Content Include="HtmlDemo\超链接.html" />
   </ItemGroup>

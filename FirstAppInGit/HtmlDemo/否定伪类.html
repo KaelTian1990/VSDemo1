@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>否定伪类</title>
+    <style type="text/css">
+        /*
+            * 为所有的p元素设置一个背景颜色为黄色,除了class值为hello
+            * 否定伪类
+                作用:  可以从已选中的元素中剔除出某些元素
+                语法:
+                       :not(选择器)
+                p:not(.hello) {
+            background-color: yellow;
+        }
+        */
+
+         p:not([class="hello"]){
+             background-color:forestgreen;
+         }
+    </style>
+</head>
+<body>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p class="hello">我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+</body>
+</html>

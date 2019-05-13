@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>子元素选择器</title>
+    <style type="text/css">
+        /*
+            为第一个p标签设置背景颜色为黄色
+            * :first-child{
+
+            }
+                  body > p:first-child {
+            background-color: yellow;
+        }
+
+               div > p:last-child {
+            background-color: blue;
+        }
+        */
+
+
+
+
+        /*
+            * :nth-child 可以选中任意位置的子元素
+            该选择器后边可以指定一个参数,可以指定要选中第几个子元素
+             body > div > p:nth-child(1) {
+            background-color:deepskyblue;
+        }
+            * even 表示偶数位置的子元素
+                p:nth-child(even) {
+            background-color:darkgrey;
+        }
+            * odd 表示奇数位置的子元素
+                p:nth-child(odd){
+            background-color:forestgreen;
+        }
+        */
+
+        /*
+            :first-of-type
+            :last-of-type
+            :nth-of-type
+               和:first-child这些类似,
+               但是child时在所有的子元素进行筛选,:*-of-type是在类型中筛选
+              p:first-of-type {
+            background-color:deepskyblue;
+        }
+        */
+        p:last-of-type {
+            color: darkgreen;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <span>我是一个span标签</span>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <div>
+        <p>我是div中的第一个p标签</p>
+    </div>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+</body>
+</html>

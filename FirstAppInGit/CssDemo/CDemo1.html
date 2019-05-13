@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Css 定义位置</title>
+    <!--
+        2.可以将css样式编写到head中的style标签里
+          可以为元素一起设置样式,这样可以使样式进一步复用,但是一个项目里如果有很多的html页,
+          并且页面往往需要统一样式时,这种方式仍然很不方便,应该引入一个css类文件,在css类文件里
+          设置样式
+        -->
+    <style type="text/css">
+        .class2 {
+            color: green;
+            font-size: 21px;
+            font-weight: bolder;
+        }
+    </style>
+
+    <!--
+       3.可以将css样式编写到外部的css文件中   
+         然后通过link标签来将外部的css文件引入到当前页面中,
+         这样外部文件中的css样式表将会应用到当前页面中
+         rel和type是固定写法.
+         href是引入的地址
+
+         将css样式统一写到外部的样式表中,完全使结构和表现分离,可以使样式表在不同的页面使用
+         使样式表最大程度的进行复用,将样式统一写在样式表中,通过link标签引入,可以使用浏览器的缓存加快用户的访问速度
+         提高用户体验,所以在开发中我们最推荐使用的方式就是外部的css文件
+    -->
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+</head>
+<body>
+    <!--
+        (赋值方式为名值对结构)
+        1.可以将css样式编写到元素的style属性当中,这种样式叫做内联样式
+          内联样式只对当前元素的内容起作用(很不方便),无法复用
+
+          内联样式属于结构与表现耦合,不方便后期的维护,不推荐使用
+        -->
+    <div>
+        <p style="color:red;font-size:20px;font-weight:bold">锄禾日当午,汗滴禾下土1</p>
+
+        <p class="class2">锄禾日当午,汗滴禾下土2</p>
+        <p class="class2">锄禾日当午,汗滴禾下土3</p>
+        <p class="class2">锄禾日当午,汗滴禾下土4</p>
+        <p class="class2">锄禾日当午,汗滴禾下土5</p>
+        <p class="class1">锄禾日当午,汗滴禾下土class1</p>
+        <p class="class1">锄禾日当午,汗滴禾下土class2</p>
+        <p class="class1">锄禾日当午,汗滴禾下土class3</p>
+        <p class="class1">锄禾日当午,汗滴禾下土class4</p>
+    </div>
+</body>
+</html>
