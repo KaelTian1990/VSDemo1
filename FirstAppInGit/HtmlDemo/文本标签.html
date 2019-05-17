@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>文本标签</title>
+    <style type="text/css">
+        q::before {
+            content: "";
+        }
+
+        q::after {
+            content: "";
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <!--
+        em和strong
+        - 这两个标签都表示一个强调的内容
+              em主要表示语气的强调,em在浏览器中默认使用斜体
+              strong表示内容的重要性,strong在浏览器中显示粗体
+        -->
+        <p>hello hello hello周杰伦</p><br />
+        <strong>hello hello hello周杰伦</strong><br />
+        <p>hello<em>hello</em>  hello周杰伦</p>
+        <p>
+            <em>今天天气不错哦</em>
+        </p>
+        <p>
+            <strong>你得学好啊!~</strong>
+        </p>
+        <!--
+            i标签中的内容会以斜体显示
+            b标签中的内容会以加粗显示
+
+            h5规范中规定,对于不需要着重强调的内容,而是单纯的加粗或者是斜体就可以使用b标签和i标签
+        -->
+        <p>
+            <i>我是i标签中的内容</i>
+        </p>
+
+        <p>
+            <b>我是b标签中的内容</b>
+        </p>
+        <!--
+            small标签中的内容会比他的父元素小一些
+              在h5中使用small标签来表示一些细则一类的内容
+              比如:合同中的小子,网站的版权声明都可以放到small中
+            -->
+        <p>
+            郭德纲
+            <small>我是一个small标签</small>
+            于谦
+        </p>
+        <!--
+            网页中所有的加书名号的内容都可以使用cite标签,表示参考的内容
+            关心语义
+            比如:书名 歌名 话剧名 电影名。。。。。。
+            -->
+        <p>
+            <cite>《历史的天空》</cite>是我非常喜欢的一本书
+        </p>
+
+        <!--
+            q标签表示一个短的引用(行内引用)
+            子曰:学而不思则罔,思而不学则殆
+            q标签引用的内容,浏览器会默认加上引号,表示是引用的内容
+
+            blockquote标签表示一个长引用(块级引用)
+            -->
+        <p>
+            子曰:<q>学而不思则罔,思而不学则殆</q>
+        </p>
+
+        <div>
+            子曰:<blockquote>孔子东游,见两小儿辩日</blockquote>
+            咋回事
+        </div>
+
+        <!--
+            使用sup标签来设置一个上标
+            使用sub标签来设置一个下标
+        -->
+
+        <div>
+            <p> 2<sup>3</sup></p>
+            丛围<sup><a href="https://www.baidu.com">[1]</a></sup>
+        </div>
+
+        <div>
+            <p>
+                H<sub>2</sub>O
+            </p>
+        </div>
+        <!--
+            使用del标签表示删除的内容
+        -->
+        <div>
+            <p>
+                原价:
+                <del>20.8</del>
+            </p>
+            <p>现价:11.6</p>
+        </div>
+
+        <!--
+            ins表示一个插入的内容
+               ins中的内容,会自动添加下划线
+            -->
+        <p>
+            我们的老师<ins>真次啊</ins>
+        </p>
+
+        <!--
+            在网页中直接编写一些代码
+            pre是一个预格式标签,会将代码中的格式保存,不会忽略多个空格
+            code专门用来表示代码
+            一般结合使用pre和code来表示代码
+            -->
+        <div>
+            <pre>
+            window.onload=function(){
+            alert("Hello Kael");
+            }
+            </pre>
+            <code>
+                window.onload=function(){
+                alert("Hello Kael");
+                }
+            </code>
+            <pre>
+            <code>
+                window.onload=function(){
+                alert("Hello Kael");
+                }
+            </code>
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

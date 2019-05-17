@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>a的伪类</title>
+    <style type="text/css">
+
+
+        /*涉及到a的伪类一共有4个:
+            *  :lnik
+            *  :visited
+            *  :hover
+            *  :active
+            *  hover 和  active 可能同时触发(点击的时候)
+               这四个优先级是一样的,因此他们的顺序是有要求的
+               hover不能写到active的下边,如果是这样的话在点击的时候没有办法体现正在点击这个操作,
+               因此a的伪类是有顺序的
+               link和visited 必须要在 hover 和active的上面
+               hover必须在active的上面
+               这样才能体现不同点击情况下的不同状态
+
+               方便记顺序
+               love and hate
+               link->visited->hover->active
+        */
+
+
+        a:link {
+            color: yellowgreen;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        /*
+            鼠标移入
+        */
+        a:hover {
+            color: orange;
+        }
+     
+        /*
+            正在点击
+        */
+        a:active{
+            color:blue;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">访问过的链接</a><br />
+    <a href="http://www.hao123.com">未访问过的链接</a><br />
+</body>
+</html>
