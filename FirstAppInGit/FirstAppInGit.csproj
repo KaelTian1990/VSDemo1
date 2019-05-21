@@ -56,6 +56,7 @@
     <Content Include="CssDemo\CDemo1.html" />
     <Content Include="CssDemo\Css语法demo1.html" />
     <Content Include="CssDemo\style1.css" />
+    <Content Include="HtmlDemo\a的伪类.html" />
     <Content Include="HtmlDemo\demo01.html" />
     <Content Include="HtmlDemo\demo02.html" />
     <Content Include="HtmlDemo\demo03.html" />
@@ -66,14 +67,27 @@
     <Content Include="HtmlDemo\伪元素Demo.html" />
     <Content Include="HtmlDemo\伪类Demo.html" />
     <Content Include="HtmlDemo\兄弟元素选择器.html" />
+    <Content Include="HtmlDemo\列表.html" />
     <Content Include="HtmlDemo\否定伪类.html" />
     <Content Include="HtmlDemo\块与内联demo.html" />
     <Content Include="HtmlDemo\子元素选择器.html" />
     <Content Include="HtmlDemo\子类和后代选择器.html" />
     <Content Include="HtmlDemo\属性选择器.html" />
     <Content Include="HtmlDemo\常用的选择器.html" />
+    <Content Include="HtmlDemo\文本标签.html" />
+    <Content Include="HtmlDemo\样式继承.html" />
     <Content Include="HtmlDemo\练习\练习1.html" />
     <Content Include="HtmlDemo\超链接.html" />
+    <Content Include="HtmlDemo\选择器的优先级.html" />
+    <Content Include="HtmlSenior\内边距.html" />
+    <Content Include="HtmlSenior\外边距.html" />
+    <Content Include="HtmlSenior\字体分类.html" />
+    <Content Include="HtmlSenior\字体样式.html" />
+    <Content Include="HtmlSenior\文本样式.html" />
+    <Content Include="HtmlSenior\文本格式化.html" />
+    <Content Include="HtmlSenior\盒子模型.html" />
+    <Content Include="HtmlSenior\行间距.html" />
+    <Content Include="HtmlSenior\颜色单位.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

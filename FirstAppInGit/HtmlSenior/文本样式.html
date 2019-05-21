@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>文本样式</title>
+    <style type="text/css">
+
+        .parent {
+            height: 100%;
+            /*background-color: #0bf;*/
+        }
+        /*
+            * text-transform: 设置文本的大小写(以下是最常用的)
+              -  none  默认样式,网页中的文本什么样就什么样,不做任何处理
+              -  capitalize  文本中的每个单词的首字母大写,通过(单词边界)空格来识别单词
+              -  uppercase 文本中的字母全部大写
+              -  lowercase 文本中的字母全部小写
+              -  inherit   规定从父元素继承 text-transform 属性的值
+        */
+        .d1 {
+            text-transform: capitalize;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #000;
+            /*background-color: rgb(0,255,0);*/
+            font-family: FangSong,'Microsoft YaHei',sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*
+            *  text-decoration: 文本修饰属性,规定添加到文本的修饰效果(私以为在网页开发中会将这个值置为none)
+               - none: 默认,定义标准的文本
+               - underline : 定义文本下的一条线(下划线)
+               - overline: 定义文本上的一条线
+               - line-through 定义穿过文本的一条线(删除线,和del标签的作用很像)
+        */
+        .tunderline {
+            text-decoration: underline;
+        }
+
+        .toverline {
+            text-decoration: overline;
+        }
+
+        .tlinethrough {
+            text-decoration: line-through;
+        }
+
+        a {
+            /*
+                超链接会默认添加下划线,也就是超链接的text-decoration的默认值是underline
+                    如果需要去除超链接的下划线,需要将该样式设置为none
+            */
+            text-decoration: none;
+        }
+
+        /*
+            * letter-spacing 设置的是字母之前的间隔大小.  (这两个东西用的很少)
+            * word-spacing   设置的是单词之间的间隔大小,实际上是以空格来进行判断的,有空格就认为是单词之间的间隔,这个判断不是很智能.
+        */
+        .p3 {
+            /*letter-spacing: 5px;*/
+            word-spacing: 5px;
+        }
+
+        /*
+            * text-align 用于设置文本的对齐方式,
+            * 可选值:
+                  left:默认值,文本靠左对齐
+                  right:文本靠右对齐
+                  center:文本居中对齐
+                  justify:两边都对齐
+                            -  通过调整文本之间的空格的大小,来达到一个两端对齐的目的
+
+            * text-indent 用来设置首行缩进
+              该样式需要指定一个长度,并且只对第一行生效
+              和小时候上学每一段空俩格一样
+              最好不要用"px"缩进,因为是与字体相关,而字体相关最好用em,表示font-size的倍数
+              首行两字母缩进: text-indent:2em;
+              * 当指定正值时,会自动向右缩进指定的像素
+              * 如果指定为负值,则会向左缩进指定的像素
+              如果想把文字隐藏起来可以,不希望用户看见,但是搜索引擎能看见,此时可以指定text-indent: 为负值
+        */
+        .p4 {
+            font-size: 20px;
+            text-align: justify;
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="d1">
+            <p>
+                社会上对于苍井空的评论争议一直不断，力挺派认为：苍井空有着勤奋好学的精神，不但自学中文，还常常在微博中用中文与粉丝互动。 [62-63]  其次，苍井空的敬业精神也令人称赞，在活动开始前，她会提前数小时抵达活动地点，对表演内容反复练习，精益求精。 [64-65]  此外，苍井空也着一股人道主义精神，玉树地震时，把通过出售写真募到的10万多日元捐给中国红十字会。中国网友们亲切的称她为“德艺双馨的苍老师”。 [66]
+                反对派人士则表示：一个成人片的女主角，本身已是侮辱与堕落，其在社会公众中获得的如此多的关注，这一现象本身就是是不正常，不能让苍井空现象在中国大行其道。 [67]
+                也有中立人士表示：苍井空以个人身份来到中国，衣着得体、举止礼貌地参加公共活动，热心公益事业，面对文化层面的差异，需要大家以一种包容的心态来看待，用一种客观冷静的视角来评价
+            </p>
+            <p>
+                There are moments in life when you miss someone so much that you just want to pick them from your dreams and hug them for real! Dream what you want to dream;go where you want to go;be what you want to be,because you have only one life and one chance to do all the things you want to do.
+
+                May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy? Always put yourself in others’shoes.If you feel that it hurts you,it probably hurts the other person, too.
+            </p>
+            <p style="text-transform:none">
+                The happiest of people don’t necessarily have the best of everything;they just make the most of everything that comes along their way.Happiness lies for those who cry,those who hurt, those who have searched,and those who have tried,for only they can appreciate the importance of people
+            </p>
+
+        </div>
+
+        <div>
+            <p>
+                May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy?
+            </p>
+            <p class="tunderline">
+                May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy?
+            </p>
+            <p class="toverline">
+                May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy?
+            </p>
+            <p class="tlinethrough">
+                May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy?
+            </p>
+            <del>
+                colrn丛
+            </del>
+        </div>
+
+        <div>
+            <a href="#">我是一个超链接</a>
+        </div>
+
+        <p class="p3">
+            May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy?
+        </p>
+
+        <h1 class="p4">我是一个H1</h1>
+
+        <div class="p4">
+            <p>
+                社会上对于苍井空的评论争议一直不断，力挺派认为：苍井空有着勤奋好学的精神，不但自学中文，还常常在微博中用中文与粉丝互动。 [62-63]  其次，苍井空的敬业精神也令人称赞，在活动开始前，她会提前数小时抵达活动地点，对表演内容反复练习，精益求精。 [64-65]  此外，苍井空也着一股人道主义精神，玉树地震时，把通过出售写真募到的10万多日元捐给中国红十字会。中国网友们亲切的称她为“德艺双馨的苍老师”。 [66]
+                反对派人士则表示：一个成人片的女主角，本身已是侮辱与堕落，其在社会公众中获得的如此多的关注，这一现象本身就是是不正常，不能让苍井空现象在中国大行其道。 [67]
+                也有中立人士表示：苍井空以个人身份来到中国，衣着得体、举止礼貌地参加公共活动，热心公益事业，面对文化层面的差异，需要大家以一种包容的心态来看待，用一种客观冷静的视角来评价
+            </p>
+            <p>
+                There are moments in life when you miss someone so much that you just want to pick them from your dreams and hug them for real! Dream what you want to dream;go where you want to go;be what you want to be,because you have only one life and one chance to do all the things you want to do.
+
+                May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy? Always put yourself in others’shoes.If you feel that it hurts you,it probably hurts the other person, too.
+            </p>
+
+            <div>我是一个div1标签</div>
+            <div>我是一个div2标签</div>
+            <div>我是一个div3标签</div>
+            <div>我是一个div4标签</div>
+            <div>我是一个div5标签</div>
+        </div>
+    </div>
+</body>
+</html>

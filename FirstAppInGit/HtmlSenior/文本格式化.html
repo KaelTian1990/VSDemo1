@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>文本格式化</title>
+    <style type="text/css">
+        /*
+            长度单位
+                   像素 px
+                        - 像素是我们在网页中使用最多的一个单位,
+                             一个像素就相当于我们屏幕中的一个小点,我们的屏幕实际上就是由像素点构成的
+                             屏幕分辨率:
+                                   1366*768(表示宽度就是1366个像素,高度就是768个像素) 太小不能直接看到
+                        - 不同的显示器一个像素的大小也不相同,
+                              显示效果越好越清晰,像素越小,反之像素越大
+                         像素是单位,但是不同的电器用品,实际像素的大小也不一样,手机的一个像素的大小是电脑的1/4.
+                         (郭玉军的电脑很好,很清晰,但是字体看着很小,原因就是他的电脑屏幕像素小)
+
+                   百分比 %
+                        - 也可以将单位设置为一个百分比的形式,
+                             这样浏览器会根据其父元素的样式来计算子元素的宽度和高度  
+                        - 好处是当父元素的属性值发生变化时,子元素也会按照比例发生变化
+                        - 在我们创建一个自适应的页面时,经常使用百分比作为单位
+
+                   em  (弹性布局)
+                        - em和百分比类似,它是相对于当前元素的字体大小来计算的
+                        - 1em = 1font-size
+                        - 使用em时,当字体大小发生改变时,em也会随之改变
+                        - 当设置字体相关的样式时,经常会使用em
+            .box1 {
+            font-size:100px;
+            height: 10em;
+            width: 50%;
+            background-color: yellow;
+        }
+                       font-size=100px; 1em=1 font-size; height=100*10px=1000px;
+                        
+        */
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+
+        .box1 {
+            font-size:20px;
+            height: 10em;
+            width: 50%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+
+        </div>
+    </div>
+</body>
+</html>

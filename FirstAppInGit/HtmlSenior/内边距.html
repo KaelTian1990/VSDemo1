@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>内边距</title>
+    <style type="text/css">
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 10px red solid;
+            /*
+                * 内边距,指的是盒子的内容区与盒子边框之间的距离
+                * 一共有4个方向的内边距,可以通过padding属性赋值
+                  padding-(top,right,bottom,left)来设置四个防线的内边距
+                  padding:上 右 下 左;
+
+
+                  内边距会影响盒子可见框的大小,元素的背景也会延伸到内边距
+
+                  盒子的大小由内容区,内边距,边框共同决定
+                  盒子的可见宽度= (padding-left+padding-right+width+border-left+border-right);
+                  盒子的可见高度=(padding-top+padding-bottom+height+border-top+border-bottom);
+
+                  * 使用 padding的简写样式来设置四个边框的样式
+                  padding:  * * * * ;
+            */
+            padding: 20px;
+        }
+
+        /*
+            子元素占用父元素的内容区,不会占用内边距
+
+        */
+        .box2 {
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            我是box2
+        </div>
+    </div>
+</body>
+</html>

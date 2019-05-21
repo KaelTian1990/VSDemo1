@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>字体样式</title>
+    <style type="text/css">
+        .p1 {
+            background-color: #d4e8ff;
+            /*设置字体颜色,使用color设置文字颜色,也叫前置颜色*/
+            color: #abcdef;
+            /*
+                设置字体大小,浏览器一般默认的文字大小是16px
+                font-size设置的并不是文字本身的大小,(页面显示的文字大小要比font-size设置的小)
+                     在页面中,每个文字都是处在一个看不见的框中(类似于田字格)
+                     我们设置的font-size实际上是设置的格子的高度,并不是字体的大小
+                     一般情况下文字都要比这个格子要小一些,也有时会比格子大,
+                     根据字体的不同,显示的效果也不同
+            */
+            font-size: 18px;
+            padding: 5px 0px;
+            /*
+                通过font-family可以指定文字的字体
+                当采用某种字体时,如果浏览器支持则使用该字体,
+                   如果字体不支持,则使用浏览器的默认字体
+                * 该样式可以同时指定多种字体,多个字体之间采用","分开
+                  当采用多个字体,浏览器会优先使用前边的字体,
+                     如果前边没有则会使用后边的,如果都不支持则只能使用默认字体
+                  font-family: Arial,'Microsoft YaHei',Calibri;
+                */
+            /*
+                浏览器使用的字体默认就是计算机使用的字体,
+                如果浏览器中有,则使用,如果没有则不使用
+
+                尽量不要使用太奇怪的字体,要尽量时用common的字体
+                有可能用户的电脑没有,达不到客户想要的效果
+            */
+            font-family: Consolas,'Segoe UI',David,'MV Boli',Calibri, Arial,'Microsoft YaHei';
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">
+        我是一个p标签,ABCDEFGabcdefg
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>外边距</title>
+    <style type="text/css">
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 10px red solid;
+            /*
+            * 外边距值得是当前盒子与其他盒子之间的距离,
+              * 它不会影响可见框的大小,而是会影响盒子的位置.
+              盒子有4个方向的外边距:
+                * margin -top
+                * margin -right
+                * margin -bottom
+                * margin -left
+
+              * 外边距可以理解为最小值
+              * 由于页面中的元素都是靠左靠上摆放,当我们设置上和左外边距时,会导致盒子自身的位置发生改变
+              * 如果设置右和下外边距的样式会改变其他盒子的样式
+
+
+                * 外边距也可以指定为负值,如果外边距设置为负值,则元素会向反方向移动
+
+
+                * margin还可以设置为auto,auto值一般只设置给水平方向的margin
+                * 如果只指定,坐外边距或者右外边距的margin为auto,auto是无限大的意思,他就会顶到反方向
+                * 垂直方向的外边距设置为auto,则外边距默认就是0
+                * 将margin-left和margin-right都设置为auto,则box会在父元素中水平居中,两侧的外边距设置为相同的值
+                  所以我们经常将左右外边距设置为auto,使子元素在父元素水平居中
+             */
+            /*margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;*/
+            margin: 10px auto 30px auto;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+
+
+        /*
+            ********************************************************************************
+        */
+
+        /*
+            *  垂直外边距的重叠
+               在网页中,垂直方向的相邻的外边距会发生外边距的重叠
+                   所谓的外边距重叠是指兄弟元素之间的相邻外边距会取最大值和不是取和
+               *   如果父元素的垂直外边距相邻了,则子元素的外边距会设置给父元素,这是一个问题,
+                   解决此问题的思路:
+                   1.让父元素和子元素之间不再相邻,可以给父元素设置padding-top/bottom;
+                   或者父元素和子元素之间加其他的元素.(这种解决方式并不好)
+                   2.给父元素添加padding属性,让子元素挤下去,但是这种方式如果要维持父子元素的显示状态,就需要减去父元素的高度.
+
+                   .parent{
+                    height:200px;--->  height:100px;padding-top:100px;
+            
+            }
+
+                  .child{
+                  height:100px;
+            
+            }
+                  
+        */
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 100px;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 200px;
+        }
+
+        .box5 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 20px;
+            margin-left: 20px;
+            /*
+                * 为子元素设置一个上外边距,使子元素下移
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+    <div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+        <div class="box5">
+            <div class="box6"></div>
+        </div>
+    </div>
+</body>
+</html>

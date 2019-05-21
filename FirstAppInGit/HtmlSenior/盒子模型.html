@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>盒子模型(Box Model)</title>
+    <style type="text/css">
+        .box1 {
+            /*
+                * 使用width和height设置盒子内容区(content)的宽度和高度
+                  不是整个的大小,盒子可见框的大小需要边框,内边距,内容区共同决定
+                   css 中设置四个值的顺序是 顺时针 -> 上右下左
+            */
+            width: 300px;
+            height: 300px;
+            background-color: #bfa;
+            /*
+                * 为元素设置边框(三要素必须得有)
+                  border:
+                     border-width:边框的宽度(四个边框)
+                     border-color:边框颜色
+                     border-style:边框样式(实线,虚线等等)
+                  简写:
+                  solid 实线
+                  border: 1px solid #000;
+
+                  border-width: 10px 20px 30px 40px;
+                  顺时针->上右下左设置边框宽度
+
+                  三个值的情况:
+                  border-width: 10px 20px 30px;
+                  上  左右  下
+
+                  两个值的情况:
+                  border-width: 10px 20px;
+                  上下  左右
+
+                  一个值的情况:
+                  border-width: 10px;
+                  上右下左
+
+                  除了上述写法以外,css中还提供了了其他的定义方式,可以通过w3c去查看
+                  "border-xxx-width"
+
+                  border-width:
+                  border-color:
+                  border-style
+
+                  * 设置边框的样式
+                        可选值:
+                              none 默认值,没有边框
+                              solid(实线)
+                              dashed 虚线
+                              double 双线
+
+
+                  border的样式都有默认值(谷歌浏览器)
+                     width:默认为3px
+                     color:默认为black
+                     style:默认为none
+                  
+                  大部分浏览器边框的宽度和颜色都有默认值,而边框的样式默认值都是none
+
+
+                  
+            */
+            padding: 10px;
+            border-color: red yellow orange blue;
+            border-style: solid dotted dashed double;
+            /*
+                * border 
+                   - 边框的简写样式,通过它可以同时设置四个边框的样式,宽度,颜色
+                   - 而且没有任何顺序要求
+                   - border是指定4个边框,不能分别指定
+
+            */
+            border: #000 solid 4px;
+            border-left:none;
+        }
+
+        .box2 {
+            background-color: #ff0000;
+            width: 100%;
+            height: 100%;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            /*border: 10px solid #f00;*/
+            background-color: #bfa;
+            margin: 30px;
+            border-style:solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            I am box2
+        </div>
+    </div>
+
+    <div class="box3">
+
+    </div>
+</body>
+</html>
