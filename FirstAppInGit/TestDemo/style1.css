@@ -1,0 +1,68 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+.root {
+}
+
+.commonwidth {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    /*设置一个宽度*/
+    height: 150px;
+    background-color: #bfa;
+}
+
+.content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+    background-color: orange;
+    /*padding: 10px;*/
+}
+
+
+.content_child1 {
+    width: 200px;
+    height: 100%;
+    background-color: #ffd800;
+    float: left;
+}
+
+.content_child2 {
+    width: 580px;
+    height: 100%;
+    background-color: #1794ee;
+    float: left;
+    margin: 0 10px;
+}
+
+    .content_child2 .top1 {
+        width: 560px;
+        height: 180px;
+        background-color: #f17218;
+        margin: 10px;
+    }
+
+    .content_child2 .top2 {
+        width: 560px;
+        height: 190px;
+        background-color: #b5f319;
+        margin: 0 10px;
+    }
+
+.content_child3 {
+    width: 200px;
+    height: 100%;
+    background-color: #7ced18;
+    float: left;
+}
+
+.footer {
+    height: 150px;
+    background-color: silver;
+}

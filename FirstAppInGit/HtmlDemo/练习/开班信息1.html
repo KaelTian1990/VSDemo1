@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .floatleft {
+            float: left;
+        }
+
+        .floatright {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+
+
+        .blockstype {
+            display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /*font-size: 12px;
+            font-family: 'Microsoft YaHei';*/
+            /*
+                字体大小12px,一倍行高.
+            */
+            font: 12px/1 'Microsoft YaHei';
+        }
+
+        .outer {
+            width: 300px;
+            margin: 50px auto;
+            /*background-color: #bfa;*/
+        }
+
+        .title {
+            border-top: 2px #019e8b solid;
+            line-height: 36px;
+            height: 36px;
+            background-color: #f5f5f5;
+            padding: 0 22px 0 16px;
+        }
+
+            .title h3 {
+                /*font-size: 14px;
+                font-family: 'Microsoft YaHei';*/
+                font: 16px/36px 'Microsoft YaHei';
+            }
+
+        .content {
+            border: 1px solid #deddd9;
+            padding: 0 28px 0px 22px;
+        }
+
+        ul {
+            list-style: none;
+            border-bottom: dashed 1px #deddd9;
+        }
+
+            ul li {
+                padding-bottom:20px;
+                /*margin-bottom:15px;*/
+            }
+
+        .content a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+
+            .content a:hover {
+                color: red;
+                text-decoration: underline;
+            }
+
+
+
+
+        .boldfont {
+            font-weight: bold;
+        }
+
+        .redcolor {
+            color: red;
+        }
+
+        .contentpadding1 {
+            margin-top: 14px;
+            margin-bottom: 16px;
+        }
+
+        .noborder {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="title clearfix">
+            <h3 class="floatleft">近期开班</h3>
+            <a href="#" class="floatright redcolor">16年面授开班计划</a>
+        </div>
+        <div class="content clearfix">
+            <div class="contentpadding1"><a href="#" class="boldfont">JavaEE+云计算-全程就业班</a></div>
+            <ul>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span class="redcolor boldfont">2016-04-27</span></a>
+                    <a href="#" class="floatright"><span class="redcolor boldfont">预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span class="redcolor boldfont">2016-04-27</span></a>
+                    <a href="#" class="floatright"><span class="redcolor boldfont">无座,名额爆满</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>开班盛况</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>预约报名</span></a>
+                </li>
+            </ul>
+            <div class="contentpadding1"><a href="#" class="boldfont">Android+人工智能-全程就业班</a></div>
+            <ul>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span class="redcolor boldfont">2016-04-27</span></a>
+                    <a href="#" class="floatright"><span class="redcolor boldfont">预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>开班盛况</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>预约报名</span></a>
+                </li>
+            </ul>
+            <div class="contentpadding1"><a href="#" class="boldfont">前端+HTML5-全程就业班</a></div>
+            <ul class="noborder">
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span class="redcolor boldfont">2016-04-27</span></a>
+                    <a href="#" class="floatright"><span class="redcolor boldfont">预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#" class="floatleft">开班时间:&nbsp;<span>2016-04-27</span></a>
+                    <a href="#" class="floatright"><span>预约报名</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

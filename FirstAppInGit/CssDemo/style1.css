@@ -1,9 +1,16 @@
 ﻿body {
-    color:aqua;
+    color: aqua;
 }
 
 .class1 {
     color: blue;
     font-size: 24px;
     font-weight: bolder;
+}
+
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #bfa;
 }

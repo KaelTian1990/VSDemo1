@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>内联元素的盒模型</title>
+    <style type="text/css">
+        .div1 {
+            height: 80px;
+            width: 80px;
+            background-color: red;
+        }
+
+        span {
+            background-color: #bfa;
+        }
+
+        .s1 {
+            /*
+                * 外边距,边框,内边距,内容区
+            */
+            /*
+                * 内联元素设置width和height不生效
+            */
+            width: 100px;
+            height: 100px;
+            /*
+                *设置水平内边距,对于内联元素生效
+            */
+            padding-left: 100px;
+            padding-right: 100px;
+            /*
+                *设置垂直方向的内边距,内联元素可以设置垂直方向的内边距,但是不会影响页面的布局
+            */
+            /*padding-top:50px;
+            padding-bottom:50px;*/
+            /*
+                *为元素设置边框,内联元素可以设置边框,但是垂直方向的边框不会影响布局,水平方向的会
+            */
+            /*border: 1px blue solid;*/
+            /*
+                水平外边距,垂直方向上面的外边距没有作用
+            */
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+        .s2 {
+            /*
+                * 为右边的元素设置左外边距
+                * 水平方向上的外边距不会重叠,会求和
+            */
+            margin-left: 100px;
+        }
+
+        /*
+            * 结论:对于内联元素来说,支持水平方向的边距和边框的设置,不支持垂直方向的边框和边距的设置,并且width和height失效.
+                  内联元素是内容区有多少内容就占多大地方.
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <span class="s1">我是一个span标签s1</span>
+        <span class="s2">我是一个span标签s2</span>
+        <span>我是一个span标签</span>
+        <span>我是一个span标签</span>
+        <span>我是一个span标签</span>
+        <div class="div1">
+
+        </div>
+    </div>
+</body>
+</html>

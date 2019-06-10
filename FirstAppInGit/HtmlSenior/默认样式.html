@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>默认样式</title>
+    <!--<link rel="stylesheet" type="text/css" href="style2.css" />-->
+    <style type="text/css">
+
+        /*
+            * 浏览器为了美化页面,即使开发人员并没有为元素设置样式,所以为很多标签都设置了默认的margin和padding
+            * 但是在开发过程中我们需要自定义样式,不需要他这些默认样式.
+
+            * 所以我们往往在编写样式前需要将浏览器设置的默认样式去掉
+
+              但是如果我们一个一个的去掉浏览器的默认样式会过于麻烦,因此我们可以使用选择器(全体元素原则器"*")
+              将他的margin和padding设置为0
+              
+               * {
+            margin: 0;
+            padding: 0;
+        }
+
+              * 清除浏览器的默认样式,上面这种方式效率比较低,以后会介绍其他的.
+        */
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+        }
+
+
+        p {
+            background-color: yellow;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*body {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }*/
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box1"></div>
+    </div>
+    <p>我是一个P标签</p>
+
+    <ul>
+        <li>格式1</li>
+        <li>格式2</li>
+        <li>格式3</li>
+        <li>格式4</li>
+    </ul>
+</body>
+</html>

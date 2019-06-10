@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>导航练习</title>
+    <style type="text/css">
+        /*
+            清除默认样式
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            list-style: none;
+
+            /*
+                在IE6中,为元素设置宽度,会默认为元素开启haslayout.
+            */
+            width: 1000px;
+            margin: 50px auto;
+            /*
+                解决高度塌陷
+            */
+            overflow: hidden;
+            zoom: 1;
+        }
+
+
+
+            .nav li {
+                float: left;
+                width:25%;
+            }
+
+                .nav li a {
+                    display: inline-block;
+                    width: 100%;
+                    /*设置文字居中*/
+                    text-align: center;
+                    padding: 5px 0px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    background-color: #6495ED;
+                }
+
+                    .nav li a:hover {
+                        background-color: #c00;
+                    }
+    </style>
+</head>
+<body>
+    <!--创建导航条的结构-->
+    <div>
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">联系</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+</body>
+</html>

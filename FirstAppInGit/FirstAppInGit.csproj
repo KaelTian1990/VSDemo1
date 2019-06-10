@@ -56,6 +56,12 @@
     <Content Include="CssDemo\CDemo1.html" />
     <Content Include="CssDemo\Css语法demo1.html" />
     <Content Include="CssDemo\style1.css" />
+    <Content Include="HtmlAdvanced\导航条.html" />
+    <Content Include="HtmlAdvanced\导航条plus.html" />
+    <Content Include="HtmlAdvanced\清除浮动.html" />
+    <Content Include="HtmlAdvanced\相对定位.html" />
+    <Content Include="HtmlAdvanced\高度塌陷.html" />
+    <Content Include="HtmlAdvanced\高度塌陷2.html" />
     <Content Include="HtmlDemo\a的伪类.html" />
     <Content Include="HtmlDemo\demo01.html" />
     <Content Include="HtmlDemo\demo02.html" />
@@ -76,18 +82,30 @@
     <Content Include="HtmlDemo\常用的选择器.html" />
     <Content Include="HtmlDemo\文本标签.html" />
     <Content Include="HtmlDemo\样式继承.html" />
+    <Content Include="HtmlDemo\练习\开班信息.html" />
+    <Content Include="HtmlDemo\练习\开班信息1.html" />
     <Content Include="HtmlDemo\练习\练习1.html" />
     <Content Include="HtmlDemo\超链接.html" />
     <Content Include="HtmlDemo\选择器的优先级.html" />
+    <Content Include="HtmlSenior\display.html" />
+    <Content Include="HtmlSenior\overflow.html" />
+    <Content Include="HtmlSenior\style2.css" />
+    <Content Include="HtmlSenior\内联元素的盒模型.html" />
     <Content Include="HtmlSenior\内边距.html" />
     <Content Include="HtmlSenior\外边距.html" />
     <Content Include="HtmlSenior\字体分类.html" />
     <Content Include="HtmlSenior\字体样式.html" />
     <Content Include="HtmlSenior\文本样式.html" />
     <Content Include="HtmlSenior\文本格式化.html" />
+    <Content Include="HtmlSenior\文档流.html" />
+    <Content Include="HtmlSenior\浮动.html" />
+    <Content Include="HtmlSenior\浮动2.html" />
     <Content Include="HtmlSenior\盒子模型.html" />
     <Content Include="HtmlSenior\行间距.html" />
     <Content Include="HtmlSenior\颜色单位.html" />
+    <Content Include="HtmlSenior\默认样式.html" />
+    <Content Include="TestDemo\style1.css" />
+    <Content Include="TestDemo\简单布局.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

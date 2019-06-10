@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>开班信息</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .boldfont {
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 400px;
+            /*border: 1px solid gray;*/
+            padding: 1px;
+            /*text-align: center;*/
+            font-size:14px;
+        }
+
+        .header {
+            border-top: 2px solid rgb(28,144,125);
+            padding: 10px 15px;
+            background-color: rgb(238,241,238);
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .headerFont {
+            font-size: 20px;
+            color: rgb(58,54,52);
+        }
+
+        .headerlink {
+            display: block;
+            color: red;
+            text-align: center;
+        }
+
+        .leftfloat {
+            float: left;
+        }
+
+        .rightfloat {
+            float: right;
+        }
+
+
+        .content {
+            background-color: rgb(252,255,252);
+            border: 1px solid #696565;
+            padding: 0 18px;
+        }
+
+        .contentborder {
+            border-bottom: 1px dashed #000;
+        }
+
+        .subcontentheader {
+            padding: 20px 0;
+            font-size: 18px;
+        }
+
+        .subcontentcontent {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="header clearfix">
+                <div class="boldfont headerFont leftfloat">近期开班</div>
+                <a class="headerlink rightfloat" href="#">16年面授开班计划</a>
+            </div>
+            <div class="content">
+                <div class="contentborder">
+                    <div class="subcontentheader boldfont">
+                        JavaEE+云计算-全程就业班
+                    </div>
+                    <div class="subcontentcontent clearfix">
+                        <div class="leftfloat">开班时间: 2016-04-27</div>
+                        <div class="rightfloat boldfont">预约报名</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
