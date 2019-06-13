@@ -4,10 +4,71 @@
 <head>
     <meta charset="utf-8" />
     <title>相对定位</title>
+    <style type="text/css">
+        .box1 {
+            /*width: 200px;*/
+            height: 200px;
+            background-color: red;
+            position:relative;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /*
+                * 定位:
+                * - 定位指的是将指定的元素摆放到页面的任意位置
+                        通过定位可以任意的摆放元素
+                  - 通过position属性设置元素的定位
+                     - 可选值:
+                           static:默认值,元素没有开启定位
+                           relative:开启元素的相对定位
+                           absloute:开启元素的绝对定位
+                           fixed:开启元素的固定定位(绝对定位的一种)
+            */
+            /*
+                1.开启元素的相对定位,不设置偏移量时,不会产生任何变化
+                * 开启定位: position值不是默认的static
+                * 通过left right top bottom四个属性设置元素的偏移量
+                * left:元素相对于其定位位置的左偏移量
+                * right:元素相对于其定位位置的右偏移量
+                * top:元素相对于其定位位置的上偏移量
+                * bottom:元素相对于其定位位置的下偏移量
+                2.相对定位是相对于元素在文档流中原来的位置进行定位
+                3.相对定位的元素不会脱离文档流,原来的位置还在.
+                        position: relative;
+                        left:200px;
+                        top:200px;
+                4.相对定位会使元素提升层级(盖住文档流的元素,黄在绿的上面)
+                        position: relative;
+                        left:100px;
+                        top:200px;
+                通常偏移量只需要使用两个就可以对元素进行定位
+                一般会选择水平和垂直方向的偏移量为元素进行定位
+                5.相对定位不会改变元素的性质,块还是块,内联还是内联(第五条和第三条是一回事儿)
+            */
+            position: relative;
+            left: 100px;
+            top: 200px;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+
+        .s1{
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            position:relative;
+        }
+    </style>
 </head>
 <body>
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
+    <span class="s1">我是一个span</span>
 </body>
 </html>

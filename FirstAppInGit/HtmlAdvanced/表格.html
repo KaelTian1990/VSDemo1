@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        /*.t1 {
+            border: 1px solid black;
+        }
+
+            .t1 tr {
+                border: 1px dashed black;
+            }*/
+
+        .t2 {
+            width: 300px;
+            margin: 60px auto;
+            /*border: 1px solid black;*/
+            /*
+                * table和td边框之间默认有一个距离
+                * 通过border-spacing属性可以设置这个距离
+            */
+            border-spacing: 0px;
+            /*
+                * border-collapse通过此属性将边框合并
+                * 如果设置了边框合并,则border-spacing自动失效
+            */
+            border-collapse: collapse;
+            /*
+                设置上述两个属性之后,可以直接给td设置边框属性,不需要再给table设置边框属性
+            */
+            /*background-color: #bfa;*/
+        }
+
+            .t2 th, td {
+                border: 1px solid black;
+            }
+
+            .t2 td {
+                text-align: center;
+            }
+
+            /*
+                设置隔行变色
+            */
+            .t2 tr:nth-child(even) {
+                background-color: #bfa;
+            }
+
+            /*
+                鼠标移入以后改变颜色
+            */
+            .t2 tr:hover {
+                background-color: yellow;
+            }
+    </style>
+</head>
+<body>
+    <!--
+          表格表示一些格式化的数据,比如:课程表,银行对账单
+          在网页中也可以创建出不同风格的表格
+
+          table是块元素
+    -->
+    <!--
+         在HTML中,使用table标签创建表格
+    -->
+    <!--<table class="t1" border="1" align="center" width="40%">
+        <tr><th>Module</th><th>Cohort</th><th>Assessment</th></tr>
+        <tr><td>M201</td><td>Main</td><td>PET</td></tr>
+        <tr>
+            <td>M101</td>
+
+                colspan 横向合并单元格
+
+            <td colspan="2">SSP</td>
+            <td>CET</td>
+        </tr>
+    </table>-->
+
+    <table class="t2">
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>住址</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>唐僧</td>
+            <td>男</td>
+            <td>相国寺</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>玉皇大帝</td>
+            <td>男</td>
+            <td>天庭</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>唐僧</td>
+            <td>男</td>
+            <td>相国寺</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>玉皇大帝</td>
+            <td>男</td>
+            <td>天庭</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>唐僧</td>
+            <td>男</td>
+            <td>相国寺</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>玉皇大帝</td>
+            <td>男</td>
+            <td>天庭</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>唐僧</td>
+            <td>男</td>
+            <td>相国寺</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>玉皇大帝</td>
+            <td>男</td>
+            <td>天庭</td>
+        </tr>
+    </table>
+</body>
+</html>

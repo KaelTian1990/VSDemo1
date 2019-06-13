@@ -56,10 +56,16 @@
     <Content Include="CssDemo\CDemo1.html" />
     <Content Include="CssDemo\Css语法demo1.html" />
     <Content Include="CssDemo\style1.css" />
+    <Content Include="HtmlAdvanced\Stylesheet1.css" />
+    <Content Include="HtmlAdvanced\固定定位.html" />
     <Content Include="HtmlAdvanced\导航条.html" />
     <Content Include="HtmlAdvanced\导航条plus.html" />
     <Content Include="HtmlAdvanced\清除浮动.html" />
     <Content Include="HtmlAdvanced\相对定位.html" />
+    <Content Include="HtmlAdvanced\绝对定位.html" />
+    <Content Include="HtmlAdvanced\背景.html" />
+    <Content Include="HtmlAdvanced\表格.html" />
+    <Content Include="HtmlAdvanced\雪碧图.html" />
     <Content Include="HtmlAdvanced\高度塌陷.html" />
     <Content Include="HtmlAdvanced\高度塌陷2.html" />
     <Content Include="HtmlDemo\a的伪类.html" />
@@ -104,8 +110,15 @@
     <Content Include="HtmlSenior\行间距.html" />
     <Content Include="HtmlSenior\颜色单位.html" />
     <Content Include="HtmlSenior\默认样式.html" />
+    <Content Include="TestDemo\Btn.html" />
+    <Content Include="TestDemo\img\amazon.png" />
+    <Content Include="TestDemo\img\bgdimage.png" />
+    <Content Include="TestDemo\img\btn.png" />
+    <Content Include="TestDemo\img\smallpic.png" />
     <Content Include="TestDemo\style1.css" />
+    <Content Include="TestDemo\导航条.html" />
     <Content Include="TestDemo\简单布局.html" />
+    <Content Include="TestDemo\背景1.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
