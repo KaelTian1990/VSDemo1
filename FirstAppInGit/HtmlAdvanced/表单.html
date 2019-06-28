@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--
+        表单的作用就是用来将用户信息提交给服务器
+            比如:百度的搜索框 注册 登录这些操作都需要填写表单
+    -->
+    <!--
+        使用Form标签创建一个表单
+            form标签中必须制定一个action属性,该属性指向的是一个服务器的地址
+            当我们提交表单时将会提交到action属性对应的地址
+        -->
+    <form action="target.html">
+        <!--
+       使用form创建的仅仅是一个空白的表单,
+           需要向form中添加表单项
+
+           用户填写的信息会附在url地址的后边以查询字符串的形式发送给服务器
+           url地址?查询字符串
+
+           格式:
+               属性名=属性值(名值对)&属性名=属性值(名值对)
+    -->
+
+        <div>
+            <label>用户名:</label>
+            <!--文本框-->
+            <!--<input type="text" name="username" />
+        <input type="password" name="password" />-->
+            <input type="text" />
+        </div>
+        <div>
+            <label for="pwd">密码:</label>
+            <input type="password" id="pwd" />
+        </div>
+        <div>
+            <!--
+            radio类型的input标签需要通过name进行分组,
+            像这种需要用户选择但是不需要用户直接填写内容的表单项,
+                还必须指定一个value属性,这样被选中的表单项的value属性值将会最终提交给服务器
+        -->
+            性别:
+            <input type="radio" value="male" name="sex" id="male"><label for="male">男</label>
+            <input type="radio" value="female" name="sex" checked="checked" id="female" /><label for="female">女</label>
+        </div>
+
+        <div>
+            <!--多选框
+           -  使用input创建一个多选框,他的type属性使用checkbox
+
+        -->
+            爱好
+            <input type="checkbox" name="ball" value="football" />足球
+            <input type="checkbox" name="ball" value="basketball" />篮球
+            <input type="checkbox" name="ball" value="tabletennis" />羽毛球
+            <input type="checkbox" name="ball" value="pingpang" checked="checked" />兵乓求
+        </div>
+
+        <!--
+    下拉列表
+        - 使用select标签创建下拉列表
+    -->
+        你喜欢的明星
+        <select name="selecttest">
+            <!--
+        在下拉列表中使用option标签来创建一个一个的列表项
+        -->
+            <optgroup label="常规影星">
+                <option value="吉泽明步">吉泽明步</option>
+                <option value="新垣结衣">新垣结衣</option>
+                <option value="长泽雅美">长泽雅美</option>
+            </optgroup>
+            <optgroup label="AV女优">
+                <option value="饭岛爱">饭岛爱</option>
+                <option value="武藤兰">武藤兰</option>
+                <option value="苍井空" selected="selected">苍井空</option>
+            </optgroup>
+        </select>
+        <br />
+        <br />
+        <!--
+         使用textarea 创建文本域
+    -->
+        <div>
+            <textarea>
+             阿拉阿拉
+             Colrn
+             Yuki
+             
+            </textarea>
+        </div>
+
+        <input type="submit" value="噶库塞" />
+
+
+        <input type="button" value="扩展按钮" />
+        <!--
+        推荐使用这种方式
+    -->
+        <button>按钮</button>
+        <!--表单分组可以使用fieldset
+            legend用来表示组头信息
+            -->
+        <fieldset>
+            <legend>
+                用户信息
+            </legend>
+            <div>div1</div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                用户岁数
+            </legend>
+            <div>div2</div>
+        </fieldset>
+        <fieldset>
+            <div>div3</div>
+        </fieldset>
+        <fieldset>
+            <div>div4</div>
+        </fieldset>
+    </form>
+</body>
+</html>

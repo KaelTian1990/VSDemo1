@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<!--框架集和内联框架的作用类似,都是用于在一个页面中引入其他外部的页面.
+    框架集可以同时引入多个页面,而内联框架只能引入一个
+    在h5标准中,推荐使用框架集,而不使用内联框架
+
+    使用frameset来创建一个框架集,注意frameset不能和body出现在同一个页面中
+       所以是用框架集,不能使用body标签
+       frameset专门引用外部页面,不能再自定义页面中的元素了
+
+    属性:
+        rows,指定框架集中的所有框架,一行一行的排列
+        cols,指定框架集中的所有框架,一列一列的排列
+
+        这两个属性frameset必须选择一个,并且需要在属性中指定每一部分所占的大小
+    -->
+<frameset rows="50%,50%">
+    <frame src="固定定位.html" />
+    <frame src="导航条.html" />
+</frameset>
+</html>
